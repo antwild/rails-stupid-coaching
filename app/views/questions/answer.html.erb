@@ -1,0 +1,27 @@
+<div class="contain">
+
+  <h1>Stupid Coaching</h1>
+
+  <!-- <div class="your-question">
+    <p><%=  params[:question] %></p>
+    <p class="responder"><i>- You</i></p>
+  </div> -->
+
+  <div class="question-container">
+    <div class="grey-left-border"></div>
+    <div class="your-question">
+      <p><%=  params[:question] %></p>
+      <p class="responder"><i>- You</i></p>
+    </div>
+  </div>
+
+  <div class="answer-container">
+    <div class="grey-left-border"></div>
+    <div class="your-answer">
+      <p><strong><%= @answer %></strong></p>
+      <p class="responder"><i>- Coach</i></p>
+    </div>
+  </div>
+
+  <%= link_to "Ask another question", ask_path%>
+</div>
